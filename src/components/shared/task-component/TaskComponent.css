@@ -1,0 +1,117 @@
+.task-container {
+    background: #F3FDE8;
+    padding: 30px;
+    width: 320px;
+    height: 220px;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.3s ease-out;
+}
+
+.task-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.task-name {
+    color: #7B7B7B;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.task-icon {
+    width: 40px;
+}
+
+.task-description {
+    font-weight: 400;
+    height: 70px;
+    margin: 30px 0;
+    color: #7B7B7B;
+    transition: 0.3s ease-out;
+    overflow-y: hidden;
+}
+
+.three-dot-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.task-created-at {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    color: #7B7B7B;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 11px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background: #FFE5E5;
+    color: #7B7B7B;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    box-shadow: 0 0 5px 1px #9491FF22;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.menu p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding: 10px 30px 5px 10px;
+    box-sizing: border-box;
+}
+
+.menu .option:hover {
+    background: #FFE5E555;
+}
+
+.complete {
+    color: #35da7a;
+}
+
+.delete {
+    color: #ff2551;
+}
+
+.menu .option {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #7B7B7B22;
+    padding-left: 10px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.menu .option img {
+    width: 18px;
+}
+
+@media screen and (max-width: 412px) {
+    .task-container {
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+    }
+
+    .task-description {
+        height: 0px;
+        margin-left: 30px;
+    }
+
+    .three-dot-menu {
+        top: 10px;
+        transform: rotate(90deg);
+    }
+}

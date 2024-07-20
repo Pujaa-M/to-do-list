@@ -1,0 +1,41 @@
+.snackbar-container {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    top: -50px;
+    left: 37.5%;
+    transition: 0.3s ease-out;
+}
+
+.show {
+    top: 0;
+}
+
+.snackbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.25rem;
+    color: #F3FDE8;
+}
+
+.snackbar-content img {
+    background: #F3FDE8;
+    padding: 5px;
+    border-radius: 50%;
+    width: 20px;
+}
+
+.snackbar-content p {
+    padding-top: 2px;
+}
+
+@media screen and (max-width: 412px) {
+    .snackbar-container {
+        width: 100%;
+        left: 0;
+    }
+}
